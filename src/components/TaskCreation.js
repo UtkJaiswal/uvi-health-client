@@ -28,6 +28,7 @@ function TaskCreation() {
         Axios.post("https://uvi-health-server.herokuapp.com/addAppointment",{appointmentName,personName,appointmentType,appointmentSlot}).then((response)=>{
             alert("Task added successfully")
         })
+        window.location.reload();
     }
     
     
